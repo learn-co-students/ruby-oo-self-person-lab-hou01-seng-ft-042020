@@ -1,7 +1,3 @@
-# your code goes here
-
-
-
 class Person
     attr_accessor :bank_account, :happiness, :hygiene
     attr_reader :name
@@ -37,15 +33,6 @@ class Person
         end 
     end
     
-    # Each Person can
-# get paid/receive payments
-# take a bath
-# call a friend
-# start a conversation
-# state if they are happy and/or clean
-
-#max, min for happy and hygiene, not bank 
-
     def get_paid(salary)
         @bank_account += salary
         "all about the benjamins"
