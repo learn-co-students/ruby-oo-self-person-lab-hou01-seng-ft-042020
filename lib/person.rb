@@ -21,7 +21,7 @@ class Person
 
   def get_paid (salary)
     @bank_account += salary
-    "all about the benjamins"
+    'all about the benjamins'
   end
 
   def take_bath
@@ -65,7 +65,7 @@ class Person
     if topic == "politics"
       self.happiness -= 2
       person.happiness -= 2
-      "blah blah partisan blah lobbyist"
+      'blah blah partisan blah lobbyist'
     elsif topic == "weather"
       self.happiness += 1
       person.happiness += 1
