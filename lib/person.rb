@@ -1,9 +1,8 @@
 # your code goes here
-# your code goes here
 require "pry"
 class Person
-    attr_reader :name
-    attr_accessor :bank_account, :happiness, :hygiene
+    attr_reader :name, :happiness, :hygiene
+    attr_accessor :bank_account
     def initialize(name)
         @name = name
         @bank_account = 25
