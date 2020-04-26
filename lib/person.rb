@@ -12,20 +12,27 @@ class Person
     # def bank_account=(blance)
     #     @bank_account = blance
     # end
+    # def happiness=(point)
+    #     # @happiness = point
+    #     # if @happiness > 10
+    #     #     @happiness = 10
+    #     # elsif @happiness < 0
+    #     #     @happiness = 0
+    #     # end
+    # end
+
     def happiness=(point)
-        # @happiness = point
-        # if @happiness > 10
-        #     @happiness = 10
-        # elsif @happiness < 0
-        #     @happiness = 0
-        # end
-        @happiness.clamp(0, 10)
+        @happiness = point.clamp(0,10)
     end
-    def hygiene=(point)
-        @hygiene.clamp(0, 10)
+    def hygiene
+        @hygiene.clamp(0,10)
     end
     def happy?
-        @happiness > 7
+        if happiness > 7
+            true
+        else
+            false
+        end
     end
     def clean?
         @hygiene > 7
