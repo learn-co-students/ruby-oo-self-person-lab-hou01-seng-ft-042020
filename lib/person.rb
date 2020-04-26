@@ -9,24 +9,20 @@ class Person
         @happiness = 8
         @hygiene = 8
     end
-    def bank_account=(blance)
-        @bank_account = blance
-    end
+    # def bank_account=(blance)
+    #     @bank_account = blance
+    # end
     def happiness=(point)
-        @happiness = point
-        if @happiness > 10
-            @happiness = 10
-        elsif @happiness < 0
-            @happiness = 0
-        end
+        # @happiness = point
+        # if @happiness > 10
+        #     @happiness = 10
+        # elsif @happiness < 0
+        #     @happiness = 0
+        # end
+        @happiness.clamp(0, 10)
     end
     def hygiene=(point)
-        @hygiene = point
-        if @hygiene > 10
-            @hygiene = 10
-        elsif @hygiene < 0
-            @hygiene = 0
-        end
+        @hygiene.clamp(0, 10)
     end
     def happy?
         @happiness > 7
